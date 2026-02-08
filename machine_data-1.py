@@ -38,11 +38,12 @@ Drop the index
 """
 Extract data for a given manufacturer
 """
-grpByManu = df.groupby(['manufacturef'])
+df['manufacturef'] = df['manufacturef'].str.upper()
+grpByManu = df.groupby('manufacturef')
 
 dfa = grpByManu.get_group('A')
 dfb = grpByManu.get_group('B')
-dfc = grpByManu.get_group('c')
+dfc = grpByManu.get_group('C')
 
 #%%
 
@@ -87,3 +88,7 @@ boxplot
 '''
 
 
+def summarize(df_manu, name):
+    load = df_manu['load']
+    time = df_manu['time']
+    
