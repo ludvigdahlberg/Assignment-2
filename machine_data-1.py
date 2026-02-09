@@ -76,7 +76,7 @@ plt.xlabel("Load")
 plt.ylabel("Time")
 plt.show()
 
-plt.scatter(dfb['load'], dfb['time'])
+plt.scatter(dfc['load'], dfc['time'])
 plt.title("Relation between load and time for (C)")
 plt.xlabel("Load")
 plt.ylabel("Time")
@@ -162,3 +162,4 @@ summarize(dfb, "B")
 summarize(dfc, "C")
 
     
+# %%
