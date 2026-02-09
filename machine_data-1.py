@@ -48,9 +48,6 @@ dfc = grpByManu.get_group('C')
 
 #%%
 
-loada = dfa['load']
-timea = dfa['time']
-
 def print_range(d, name):
     print(f"\n{name}")
     print("Load range:", d['load'].min(), "-", d['load'].max())
